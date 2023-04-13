@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Shifted-Learning</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="static/imagotipo-white-black.svg" alt="Logo" class="logo">
+      </div>
+      <nav class="menu-container">
+        <ul class="menu">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="/">Playground</a></li>
+          <li><a href="#">Log out</a></li>
+        </ul>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </header>
+  
+  
+  <div class="form-container">
+    <form>
+      <label>Theme</label>
+      <div class="radio-group">
+        <input id="sci-tech" class="option" type="radio" name="theme" value="Science">
+        <label class="button-label" for="sci-tech"><i class="bi bi-brush"></i><span>Science</span></label>
+                      
+        <input id="sports" class="option" type="radio" name="theme" value="Sports">
+        <label class="button-label" for="sports"><i class="bi bi-emoji-smile"></i><span>Sports</span></label>
+        
+        <input id="nature" class="option" type="radio" name="theme" value="Nature">
+        <label class="button-label" for="nature"><i class="bi bi-tree"></i><span>Nature</span></label>
+        
+        <input id="video-games" class="option" type="radio" name="theme" value="Video games">
+        <label class="button-label" for="video-games"><i class="bi bi-joystick"></i><span>Video games</span></label>
+        
+        <input id="music" class="option" type="radio" name="theme" value="Music" checked>
+        <label class="button-label" for="music"><i class="bi bi-music-note"></i><span>Music</span></label>
+        
+        <input id="cooking" class="option" type="radio" name="theme" value="Cooking">
+        <label class="button-label" for="cooking"><i class="bi bi-egg-fried"></i><span>Cooking</span></label>
+        
+        <input id="art" class="option" type="radio" name="theme" value="Art" checked>
+        <label class="button-label" for="art"><i class="bi bi-palette"></i><span>Art</span></label>
+      </div>
+      
+      <label>Tone</label>
+      <div class="radio-group">
+        <input id="friendly" class="option" type="radio" name="tone" value="Friendly">
+        <label class="button-label" for="friendly"><i class="bi bi-hand-thumbs-up"></i><span>Friendly</span></label>
+                      
+        <input id="encouraging" class="option" type="radio" name="tone" value="Encouraging">
+        <label class="button-label" for="encouraging"><i class="bi bi-heart"></i><span>Encouraging</span></label>
+        
+        <input id="positive" class="option" type="radio" name="tone" value="Positive">
+        <label class="button-label" for="positive"><i class="bi bi-plus-circle"></i><span>Positive</span></label>
+        
+        <input id="professional" class="option" type="radio" name="tone" value="Professional">
+        <label class="button-label" for="professional"><i class="bi bi-building"></i><span>Professional</span></label>
+        
+        <input id="clear" class="option" type="radio" name="tone" value="Clear" checked>
+        <label class="button-label" for="clear"><i class="bi bi-bullseye"></i><span>Clear</span></label>
+      </div>
+
+
+      <label>Length</label>
+      <div class="radio-group">
+        <input id="short" class="option" type="radio" name="length" value="Short">
+        <label class="button-label" for="short"><i class="bi bi-arrows-angle-contract"></i><span>Short</span></label>
+                
+        <input id="medium" class="option" type="radio" name="length" value="Medium" checked>
+        <label class="button-label" for="medium"><i class="bi bi-arrows-collapse"></i><span>Medium</span></label>
+      
+        <input id="long" class="option" type="radio" name="length" value="Long">
+        <label class="button-label" for="long"><i class="bi bi-arrows-angle-expand"></i><span>Long</span></label>
+      </div>
+    </form>
+  </div>
+  <div class="wordings-section">
+    <div class="base-wording-container">
+      <form>
+        <div class="base-wording-container">
+          <label for="base-wording">Base Wording</label>
+          <textarea id="base-wording" name="baseWording"></textarea>
+          <input type="text" id="learning-objective" name="learningObjective" value="learning-objective">
+          <input type="text" id="use_gpt4" name="use_gpt4" value="0">
+        </div>
+      </form>
+    </div>
+    <div class="shift-button-container"><button id="submit-btn" type="button">Shift</button></div>
+    <div class="shifted-wording-container">
+        <label for="shifted-wording">Shifted Wording</label>
+        <textarea id="shifted-wording" placeholder="This will be a shifted version of your base wording" readonly></textarea>
+    </div>
+  </div>
+  
+
+
+  <script src="static/script.js"></script>
+  <script src="static/menu.js"></script>
+  <script src="static/textarea.js"></script>
+    
+
+</body>
+</html>
